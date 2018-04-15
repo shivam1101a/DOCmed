@@ -1,0 +1,62 @@
+<html>
+<head>
+<title> Home Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><img src="C:\Users\Shivam Singh\Desktop\Codathon\logo.png" height="35" width="60"></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Medicines Info</a></li>
+        <li><a href="#">Diseases Info</a></li>
+        <li><a href="#">Find Doctor</a></li>
+        <li><a href="#">Book an Appointment</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+     <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+   </ul>
+    </div>
+  </nav><br><br>
+<br><br>
+<script>
+function  myfun(){
+var name=document.form["myform"].value;
+if(name=="Paineye" && name=="vomit" && name=="Painback" && name=="chill" && name=="fatigue"){
+  alert("Symptoms relates to Dengue");
+else
+  alert("Symptons doen't relate to any disease");
+  }
+}
+</script>
+<form name="myform" onsubmit="myfun" action="myfun()"   method="post">
+  <h4>Symptoms:</h4>
+  <input type="radio" value="Headache">Headache &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" value="Painback" name="Painback" >Pain in back<br>
+  <input type="radio" value="vomit" name="vomit">Vomting &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="radio" value="fever">Fever<br>
+  <input type="radio" value="Paineye" name="Paineye">Pain in eyes &nbsp&nbsp  <input type="radio" value="fatigue" name="fatigue">Fatigue<br>
+  <input type="radio" value="chill" name="chill">Chills &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="radio" value="Painback">Pain in back<br>
+  <input type="radio" value="cough">Cough &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="radio" value="bodyache">Bodyaches<br>
+ <input type="radio" value="abdomenpain">Abdominal Pain &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="radio" value="abdomencramps">Abdominal Cramps<br>
+<input type="radio" value="lowfever">Low Grade Fever &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="radio" value="muscleache">Muscle Ache<br>
+<input type="radio" value="shortbreath">Shortness of Breath &nbsp&nbsp&nbsp <input type="radio" value="fastbeat">Fast Heartbeats<br>
+  <input type="submit"   value="submit">
+
+
+
+</form>
+</body>
+</html>

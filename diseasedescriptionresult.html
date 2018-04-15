@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+}
+</style>
+</head>
+<title> Disease Description & Result </title>
+<center>
+<form>
+<h3><b>Symptons:</b></h3><br>
+<p style="font-size:90%;">Fill atlest three symptons</p>
+<input type="text" name="sympton" required><br>
+<input type="text" name="sympton" required><br>
+<input type="text" name="sympton" required><br>
+
+Are you already taking any medication ?<br>
+<input type="radio" name="ques" value="Healthques">Yes<br>
+<input type="radio" name="ques" value="Healthques">No<br>
+
+<button onclick="myfun()">Search Medicine</button>
+<div id="myDIV">
+Disease Name:<br>    Medicine name:       <br>dose:3 times/day capacity:500mg<br><br>
+<b>Do's and Dont's:</b><br>   <b>Specialist Recommended:</b>Cardiologist
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display == "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+
+
+</form>
